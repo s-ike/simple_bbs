@@ -8,8 +8,9 @@
         @forelse ($posts as $post)
             <li>
                 <a href="{{ route('posts.show', $post) }}">
-                    {{ $post->title }}</li>
+                    {{ $post->title }}
                 </a>
+            </li>
         @empty
             <li>No posts yet!</li>
         @endforelse
